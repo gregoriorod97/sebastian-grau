@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Character encoding and responsive meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- SEO Meta Tags -->
-    <title>Sebastian grau | Servicios Musicales | Sitio Oficial</title>
-    <meta name="description" content="Sitio oficial de Sebastian grau, Servicios Musicales. Descubre mi música, servicios, portafolio y más.">
-    <meta name="keywords" content="Sebastian grau, produccion de musica para medios, musica para cine">
-    <meta name="author" content="Sebastian grau">
+    <title>Grau soundlab | Servicios Musicales | Sitio Oficial</title>
+    <meta name="description" content="Sitio oficial de Grau soundlab, Servicios Musicales. Descubre nuestros servicios, portafolio y más.">
+    <meta name="keywords" content="Grau soundlab, Produccion y Mezcla, Música para cortos y largometrajes">
+    <meta name="author" content="Grau soundlab">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Sebastian grau | Servicios Musicales">
-    <meta property="og:description" content="Sitio oficial del guitarrista de jazz Marcus Green. Nuevo álbum disponible ahora.">
+    <meta property="og:title" content="Grau soundlab | Servicios Musicales">
+    <meta property="og:description" content="Sitio oficial de grau soundlab">
     <meta property="og:image" content="imagenes/og-image.jpg">
-    <meta property="og:url" content="https://www.marcusgreenjazz.com">
+    <meta property="og:url" content="https://gregoriorod97.github.io/sebastian-grau/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Sebastian grau">
-    
+    <meta property="og:site_name" content="Grau soundlab">
+      
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sebastian grau | Servicios Musicales">
-    <meta name="twitter:description" content="Sitio oficial del cantauotor y productor Sebastian Grau.">
-    <meta name="twitter:image" content="imagenes/twitter-card.jpg">
-    <meta name="twitter:creator" content="@marcusgreenjazz">
+    <meta name="twitter:title" content="Grau soundlab | Servicios Musicales">
+    <meta name="twitter:description" content="Sitio oficial de Grau soundlab.">
+    <!--<meta name="twitter:image" content="imagenes/twitter-card.jpg">
+    <meta name="twitter:creator" content="@marcusgreenjazz">-->
     
     <!-- Favicon and Apple Touch Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -34,10 +39,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Fonts -->
+    <!-- Fonts 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+
+    <style>
+    @font-face {
+        font-family: 'Benzi';
+        src: url('fonts/Benzi-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}
+
+    @font-face {
+        font-family: 'Benzi';
+        src: url('fonts/Benzi-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+}
+</style>
     
     <!-- External CSS Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
@@ -56,17 +79,18 @@
 <body>
     <!-- Loader -->
     <div class="loader">
-        <img src="24775109_3174.jpg" alt="SG Logo" class="loader-logo">
+        <img src="Grau_Grau_Blanco-14.png" alt="SG Logo" class="loader-logo">
     </div>
     
     <!-- Navigation -->
     <nav id="navbar">
-        <a href="#" class="logo">SG</a>
+        <a href="#" class="logo">GS</a>
         <ul class="nav-menu">
             <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#music" class="nav-link">about me</a></li>
+            <li class="nav-item"><a href="#music" class="nav-link">¿Quienes somos?</a></li>
             <li class="nav-item"><a href="#Servicios" class="nav-link">Servicios</a></li>
-            <li class="nav-item"><a href="#portafolio" class="nav-link">portafolio</a></li>
+            <li class="nav-item"><a href="#demo-container" class="nav-link">portafolio</a></li>
+            <li class="nav-item"><a href="#Articulos" class="nav-link">Articulos</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
         </ul>
         <div class="hamburger">
@@ -78,19 +102,25 @@
     
     <!-- Header -->
     <header id="home">
-        <div class="header-bg"></div>
+        <div class="header-bg">
+            <video class="video-bg" autoplay muted loop playsinline poster="fondo.jpg">
+            <source src="Loop.mp4" type="video/mp4" />
+            <!-- Fallback para navegadores que no soportan video -->
+            <img src="fondo.jpg" alt="Fondo alternativo" class="fallback-img" />
+            </video>
+        </div>
         <div class="header-content">
-            <h1 class="site-title animate__animated animate__fadeIn">Sebastian Grau</h1>
-            <h2 class="site-subtitle animate__animated animate__fadeIn animate__delay-1s">Musica para medios</h2>
+            <h1 class="site-title animate__animated animate__fadeIn">Grau soundlab</h1>
+            <h2 class="site-subtitle animate__animated animate__fadeIn animate__delay-1s">Música para medios</h2>
             <div class="header-bg">
-                <video autoplay muted loop playsinline src="6009535_Man_People_1280x720.mp4"></video>
+                <video autoplay muted loop playsinline src="Loop.mp4.mp4"></video>
             </div>
         </div>
     </header>
 
     <!-- about me Section -->
     <section id="music">
-        <h2 class="section-title">¿Quien soy?</h2>
+        <h2 class="section-title">¿Quienes somos?</h2>
 
         <div class="album">
             <h3 class="album-title"></h3>
@@ -112,11 +142,11 @@
         <div class="music-grid">
             <div class="album">
                 <img src="freepik__adjust__18913.jpeg" alt="Album Cover" class="album-cover">
-                <h3 class="album-title">Mezcla y máster</h3>
+                <h3 class="album-title">Produccion y Mezcla</h3>
                 <p class="album-description">Lorem ipsum dolor sit amet.</p>
             </div>
             
-            <div class="album">
+           <!-- <div class="album">
                 <img src="freepik__adjust__18913.jpeg" alt="Album Cover" class="album-cover">
                 <h3 class="album-title">Música para videojuegos</h3>
                 <p class="album-description">Lorem ipsum dolor sit amet.</p>
@@ -126,7 +156,7 @@
                 <img src="freepik__adjust__18913.jpeg" alt="Album Cover" class="album-cover">
                 <h3 class="album-title">Diseño sonoro</h3>
                 <p class="album-description">Lorem ipsum dolor sit amet.</p>
-            </div>
+            </div>-->
             <div class="album">
                 <img src="freepik__adjust__18913.jpeg" alt="Album Cover" class="album-cover">
                 <h3 class="album-title">Música para cortos y largometrajes</h3>
@@ -134,16 +164,143 @@
             </div>
         </div>
     </section>
+
+    <!-- Demo Container -->
+   <section id="demo-container">
+   <h2 class="section-title">Portafolio</h2>
+    <div class="demo-container">
+        <h3 class="demo-title">Demo de Ventana Emergente</h3>
+        <p style="margin-bottom: 2rem;">Haz clic en el botón para abrir la ventana emergente del portafolio:</p>
+        
+        <!-- Botón para abrir el modal -->
+        <button class="portfolio-btn" onclick="openPortfolioModal()">
+            <i class="fas fa-folder-open"></i> Ver Todos los Proyectos
+        </button>
+    </div>
     
     <!-- portafolio Section -->
-    <section id="portafolio" class="portafolio-section">
-        <h2 class="section-title">portafolio</h2>
-        
-        <div class="portafolio-container">
-            <iframe src="about:blank" title="Sebastian Grau - Portafolio"></iframe>
+   <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Mis Proyectos</h3>
+                <button class="close-btn" onclick="closePortfolioModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=1" alt="Proyecto 1" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Sitio Web Corporativo</h4>
+                        <p class="portfolio-description">Desarrollo completo de sitio web corporativo con diseño responsive y sistema de gestión de contenido personalizado.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML5</span>
+                            <span class="portfolio-tag">CSS3</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">PHP</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=2" alt="Proyecto 2" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">App Móvil E-commerce</h4>
+                        <p class="portfolio-description">Aplicación móvil para comercio electrónico con carrito de compras, pasarela de pago y sistema de notificaciones.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React Native</span>
+                            <span class="portfolio-tag">Node.js</span>
+                            <span class="portfolio-tag">MongoDB</span>
+                            <span class="portfolio-tag">Stripe</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=3" alt="Proyecto 3" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Dashboard Analytics</h4>
+                        <p class="portfolio-description">Panel de control interactivo para análisis de datos con gráficos dinámicos y reportes en tiempo real.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">D3.js</span>
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">PostgreSQL</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">Documentación</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=4" alt="Proyecto 4" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Plataforma Educativa</h4>
+                        <p class="portfolio-description">Sistema de gestión de aprendizaje con cursos online, evaluaciones y seguimiento de progreso estudiantil.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Vue.js</span>
+                            <span class="portfolio-tag">Laravel</span>
+                            <span class="portfolio-tag">MySQL</span>
+                            <span class="portfolio-tag">WebRTC</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">Caso de Estudio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=5" alt="Proyecto 5" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Sistema de Reservas</h4>
+                        <p class="portfolio-description">Aplicación web para gestión de reservas hoteleras con calendario interactivo y panel administrativo.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Angular</span>
+                            <span class="portfolio-tag">Spring Boot</span>
+                            <span class="portfolio-tag">Redis</span>
+                            <span class="portfolio-tag">Docker</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">API Docs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/200?random=6" alt="Proyecto 6" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Red Social</h4>
+                        <p class="portfolio-description">Plataforma social con chat en tiempo real, compartir contenido multimedia y sistema de seguimiento de usuarios.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Next.js</span>
+                            <span class="portfolio-tag">Socket.io</span>
+                            <span class="portfolio-tag">AWS S3</span>
+                            <span class="portfolio-tag">GraphQL</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link demo">Ver Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </section>
         
-        <div class="music-grid">
+       <!-- <div class="music-grid">
             <div class="album">
                 <img src="freepik__adjust__18913.jpeg" alt="Video Thumbnail" class="album-cover">
                 <h3 class="album-title">Montreal</h3>
@@ -176,13 +333,53 @@
                 <p class="album-description">Lorem ipsum.</p>
                 <a href="Nombre del pasajeiglu portafolio.wav" class="album-link" target="_blank">Escuchar canción</a>
             </div>
+        </div>-->
+    </section>
+
+    <!-- Article Section -->
+
+    <section id="Articulos">
+        <h2 class="section-title">Article</h2>
+        <p class="section-subtitle">Pequeña descrpcion de los articulos</p>
+        
+        <div class="album">
+            <img src="freepik__adjust__18913.jpeg" alt="Video Thumbnail" class="Article-cover">
+            <h3 class="Article-title">Articulo 1</h3>
+            <p class="Article-year">fecha de produccion</p>
+            <p class="Article-description">Lorem ipsum.</p>
+            <a href="" class="Article-link" target="_blank">leer </a>
+        </div>
+        
+        <div class="album">
+            <img src="freepik__adjust__18913.jpeg" alt="Video Thumbnail" class="Article-cover">
+            <h3 class="Article-title">Articulo 2</h3>
+            <p class="Article-year">fecha de produccion</p>
+            <p class="Article-description">Lorem ipsum.</p>
+            <a href="" class="Article-link" target="_blank">leer </a>
+        </div>
+        
+        <div class="album">
+            <img src="" class="Article-cover">
+            <h3 class="Article-title">Articulo 3</h3>
+            <p class="Article-year">fecha de produccion</p>
+            <p class="Article-description">Lorem ipsum.</p>
+            <a href="" class="Article-link" target="_blank">leer </a>
+        </div>
+
+        <div class="album">
+            <img src="" class="Article-cover">
+            <h3 class="Article-title">Articulo 4</h3>
+            <p class="Article-year">fecha de produccion</p>
+            <p class="Article-description">Lorem ipsum.</p>
+            <a href="" class="Article-link" target="_blank">leer </a>
         </div>
     </section>
+    
     
     <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Contacto</h2>
-        <p class="section-subtitle">Para contrataciones, colaboraciones o cualquier consulta, no dudes en ponerte en contacto conmigo.</p>
+        <p class="section-subtitle">Para contrataciones, colaboraciones o cualquier consulta, no dudes en ponerte en contacto con nosotros.</p>
         
         <form class="contact-form">
             <div class="form-group">
@@ -209,7 +406,7 @@
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#" class="social-link">
+           <!-- <a href="#" class="social-link">
                 <span class="social-icon">FB</span>
             </a>
             <a href="#" class="social-link">
@@ -220,12 +417,12 @@
             </a>
             <a href="#" class="social-link">
                 <span class="social-icon">SC</span>
-            </a>
+            </a>-->
             <a href="#" class="social-link">
                 <span class="social-icon">SP</span>
             </a>
         </div>
-        <p class="footer-text">&copy; 2025 Sebastian Grau. Todos los derechos reservados.</p>
+        <p class="footer-text">&copy; 2025 Grau soundlab. Todos los derechos reservados.</p>
     </footer>
     
     <!-- Scripts -->
